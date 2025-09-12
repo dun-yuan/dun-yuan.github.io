@@ -1,0 +1,84 @@
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --link-color: #1a73e8;
+}
+body.dark {
+  --bg-color: #121212;
+  --text-color: #dddddd;
+  --link-color: #90caf9;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+header {
+  background: var(--link-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav img {
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+section {
+  margin-bottom: 2.5rem;
+}
+h1, h2 {
+  color: var(--text-color);
+}
+a {
+  color: var(--link-color);
+}
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9em;
+  color: #aaa;
+}
+.toggle {
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 0.4rem 0.6rem;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  color: var(--link-color);
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+  margin-top: 0;
+}
